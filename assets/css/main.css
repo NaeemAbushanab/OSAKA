@@ -1,0 +1,100 @@
+/* general style */
+:root {
+  --main-color: #ff206e;
+}
+.bg-main-color {
+  color: var(--main-color) !important;
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background: #000;
+  transition: 1s all;
+}
+.icon:hover {
+  background-color: var(--main-color);
+}
+.title h2 {
+  font-size: 4rem;
+  letter-spacing: 15px;
+  color: #cacaca;
+  font-weight: 900;
+}
+.title h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* navbar style */
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+/* header style */
+.header {
+  background: url(../img/bg_osaka.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* about style */
+.about {
+  background-image: url(../img/light_dot.jpg);
+}
+
+/* services style */
+.services {
+  background-image: url(../img/dark_dot.jpg);
+}
+.services h2 {
+  color: #222;
+}
+.services {
+  color: #fff;
+}
+.bradning::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 15%;
+  height: 3px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 1s width;
+}
+.services-contnet > div:hover .bradning::after {
+  width: 50%;
+}
+.services .icon:hover {
+  color: var(--main-color);
+  background-color: #000;
+}
+
+/* our_clients */
+.main-img-clinet {
+  width: 8rem;
+  height: 8rem;
+}
+.carousel-indicators [data-bs-target] {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-indent: 0;
+  border: 0;
+  background-color: white !important;
+}
+
+/* projects style */
+.projects .nav-link {
+  color: unset;
+}
+.nav-tabs .nav-link {
+  border: 0;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--main-color);
+}
